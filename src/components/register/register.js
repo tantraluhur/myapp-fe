@@ -93,7 +93,7 @@ function Register() {
          .then((data) => {
           if(data.Message === "Succes") {
             toast.success("Signup Succes!", {className: "toast-message"})
-            navigate("/login")
+            navigate("/")
           }
           else{
             toast.error("Error! Username already exists!", {className: "toast-message"})
