@@ -35,6 +35,9 @@ function Login() {
             toast.success("Login Succes!", {className: "toast-message"})
             navigate("/homepage")
           }
+          else {
+            toast.error("Incorrect Username or Password", {className: "toast-message"})
+          }
          })
          .catch((err) => {
             console.log(err.message);
