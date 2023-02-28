@@ -1,0 +1,32 @@
+.logo-image-profile img{
+    border-radius: 50%;
+    width: 180px;
+}
+
+.logo-title-profile h2{
+    font-size: 60px;
+    
+}
+
+.logout-button{
+    height: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px #C5E0EB;
+    border: 2px solid white;
+    background-color: white;
+}
+
+.logout-button:hover{
+    color: white;
+    background-color: #1D2E4E;
+    box-shadow: 6px 6px 10px #3c4b65;
+    border: none;
+}
+
+.logout-button:active{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 8px 10px #1D2E4E;
+    transform: translateY(4px);
+    border: none;
+}

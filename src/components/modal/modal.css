@@ -1,0 +1,64 @@
+.modal-box{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container{
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 8px 8px 10px #1D2E4E;;
+    background: linear-gradient(#213356, #0C182F); 
+
+}
+
+.input{
+    border: 2px solid #88BFE8 ;
+    resize: none;
+    width: 100%;
+    filter: drop-shadow(0px 1px 6px #C5E0EB);
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+}
+
+button:disabled .save-button {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.215);
+    box-shadow: none;
+    border: none;
+}
+
+
+button:not([disabled]) .save-button:hover {
+    color: white;
+    background-color: #1D2E4E;
+    box-shadow: 6px 6px 10px #3c4b65;
+    border: none;
+}
+
+button:not([disabled]) .save-button:active {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 8px 10px #1D2E4E;
+  transform: translateY(4px);
+  border: none;
+}
+
+.close-button:hover{
+    color: white;
+    background-color: #1D2E4E;
+    box-shadow: 6px 6px 10px #3c4b65;
+    border: none;
+}
+
+.close-button:active{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 8px 10px #1D2E4E;
+    transform: translateY(4px);
+    border: none;
+}

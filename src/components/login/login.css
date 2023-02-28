@@ -1,0 +1,82 @@
+
+.login{
+    height: 100vh;
+}
+
+.box{
+    border-radius: 30px;
+    box-shadow: 8px 8px 10px #1D2E4E;
+    background: linear-gradient(#213356, #0C182F);    
+    width: 400px;
+    height: 500px;
+    border: 2px solid #88BFE8 ;
+    color: white;
+}
+
+.input-form{
+    width: 100%;
+    color: black;
+    border: none;
+}
+
+.input-form input{
+    border-radius: 8px;
+}
+
+img{
+    width: fit-content;
+    height: fit-content;
+}
+
+.login-button{
+    border-radius: 15px;
+    background-color: white;
+    font-weight: 500;
+}
+
+.input-form p{
+    font-weight: 500;
+}
+
+button:disabled .login-button {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.215);
+    border-radius: 15px;
+}
+
+
+button:not([disabled]) .login-button:hover {
+    color: white;
+    background-color: #1D2E4E;
+    box-shadow: 6px 6px 10px #3c4b65;
+
+    border-radius: 15px;
+}
+
+button:not([disabled]) .login-button:active {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 8px 10px #1D2E4E;
+  transform: translateY(4px);
+}
+
+.login-register:hover{
+    text-shadow: 2px 2px 4px white;
+
+}
+
+.login-register:active{
+    text-shadow: 2px 2px 4px white;
+    transform: translateY(4px);
+}
+
+.signup-button:hover{
+    text-shadow: 2px 2px 4px white;
+
+}
+
+.signup-button:active{
+    text-shadow: 2px 2px 4px white;
+    transform: translateY(4px);
+}
+

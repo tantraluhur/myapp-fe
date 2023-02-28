@@ -1,0 +1,45 @@
+  .modal-box-close{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .container-close{
+    width: 300px;
+    box-shadow: 8px 8px 10px #1D2E4E;;
+    background: linear-gradient(#213356, #0C182F); 
+    border-radius: 8px;
+  }
+
+
+  .dropdown-check-list .anchor {
+    cursor: pointer;
+    padding: 5px 50px 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .dropdown-check-list ul.items {
+    display: none;
+    margin-left: 3px;
+  }
+
+
+  li{
+    border-radius: 2px;
+    width: 145px;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+  }
+
+  li:first-child{
+    margin-top: 4px
+  }
+  
+  .dropdown-check-list.visible .items {
+    display: block;
+  }

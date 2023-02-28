@@ -1,0 +1,166 @@
+/* 
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.post-content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+
+.button{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+
+*/
+/* .loading{
+    height: 100vh;
+} */
+
+.input{
+    border: 2px solid #88BFE8 ;
+    resize: none;
+    width: 100%;
+    filter: drop-shadow(0px 1px 6px #C5E0EB);
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+}
+
+.post-content{
+    width: 730px;
+}
+
+.box-content{
+    width: 50%;
+}
+
+
+.title{
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 50px;
+}
+
+.title1{
+    color: white;
+}
+
+.title2{
+    color: #88BFE8    ;
+}
+
+.button{
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+
+.button-close-friend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px #C5E0EB;
+    border: 2px solid white;
+    background-color: white;
+}
+
+.button-post{
+    width: 60%;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px #C5E0EB;
+    border: 2px solid white;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-post img{
+    width: 1.5vw;
+}
+
+.card{
+
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #1D2E4E;;
+    background: linear-gradient(#213356, #0C182F);
+    width: 700px;
+}
+
+.close-friend{
+    border: 1px solid;
+    border-color: rgb(163 230 53);
+}
+
+.profile-pic img{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.delete-icon img{
+    width: 18px;
+}
+
+.update-icon img{
+    width: 18px;
+}
+
+button:disabled .button-post {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.215);
+    border-radius: 15px;
+    box-shadow: none;
+    border: none;
+}
+
+
+button:not([disabled]) .button-post:hover {
+    color: white;
+    background-color: #1D2E4E;
+    box-shadow: 6px 6px 10px #3c4b65;
+    border: none;
+}
+
+button:not([disabled]) .button-post:active {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 8px 10px #1D2E4E;
+  transform: translateY(4px);
+  border: none;
+}
+
+.button-close-friend:hover{
+    color: white;
+    background-color: #1D2E4E;
+    box-shadow: 6px 6px 10px #3c4b65;
+    border: none;
+}
+
+.button-close-friend:active{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 8px 10px #1D2E4E;
+    transform: translateY(4px);
+    border: none;
+}
+
+.update-icon img:active{
+    transform: translateY(4px);
+}
+
+.delete-icon img:active{
+    transform: translateY(4px);
+}
+

@@ -1,0 +1,47 @@
+/* 
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+    margin-right: 65px;
+    margin-left: 65px;
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+*/
+
+.profile-image img{
+    border-radius: 50%;
+    width: 60px;
+}
+
+.logo-title{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.profile-name{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+} 

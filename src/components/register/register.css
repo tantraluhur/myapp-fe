@@ -1,0 +1,7 @@
+.toast-message {
+    /* background: linear-gradient(#213356, #0C182F);     */
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 1rem 0.5rem;
+}
