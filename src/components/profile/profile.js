@@ -73,7 +73,7 @@ function Profile() {
                         Cookies.remove("token")
                         toast.success("Logout Succes!", {className: "toast-message"})
 
-                        navigate("/login")
+                        navigate("/")
                     }
                 })
                 .catch((err) => {

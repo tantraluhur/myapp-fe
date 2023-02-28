@@ -140,7 +140,7 @@ function Register() {
                 Signup
               </div>
             </button>
-            <a href="/login">
+            <a href="/">
                 <div className="login-register text-white flex justify-center">
                     Login Here!
                 </div>
