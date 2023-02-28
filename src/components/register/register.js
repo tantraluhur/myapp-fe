@@ -21,6 +21,7 @@ function Register() {
   
 
   const getPasswordSuggestions = (password) => {
+    let check = false
     const lowercaseRegex = /[a-z]/;
     const uppercaseRegex = /[A-Z]/;
     const numberRegex = /[0-9]/;
@@ -34,23 +35,33 @@ function Register() {
 
     else if (!lowercaseRegex.test(password)) {
       suggestions.push('Password should contain at least one lowercase letter');
+
     }
 
     else if (!uppercaseRegex.test(password)) {
       suggestions.push('Password should contain at least one uppercase letter');
+
     }
 
     else if (!numberRegex.test(password)) {
       suggestions.push('Password should contain at least one number');
+
     }
 
     else if (!specialCharRegex.test(password)) {
       suggestions.push('Password should contain at least one special character');
+
     }
     else if (textConfirmPassword !== password) {
         suggestions.push('Password not match');
+          
     }
-
+    else if(textUsername === ""){
+        suggestions.push('Fill the Username');
+    }
+    else {
+        suggestions.push('Password Match');
+    }
     return suggestions.join(', ');
   };
 
@@ -65,8 +76,7 @@ function Register() {
     setTextConfirmPassword(event.target.value);
   }
   useEffect(() => {
-    
-    if (textConfirmPassword === textPassword && textConfirmPassword !== "" && textPassword !== "" && textUsername !== "") {
+    if (getPasswordSuggestions(textPassword) === "Password Match" && textUsername !== "") {
       setDisableButton(false);
     } else {
       setDisableButton(true);
@@ -74,7 +84,7 @@ function Register() {
   }, [textUsername, textPassword, textConfirmPassword]);
   useEffect(() => {
     setPasswordSuggestions(getPasswordSuggestions(textPassword));
-  }, [textPassword, textConfirmPassword]);
+  }, [textPassword, textConfirmPassword, textUsername]);
 
   function handleClick(){
     fetch('https://myapp-be.herokuapp.com/api/signup', {
@@ -133,7 +143,7 @@ function Register() {
                 </div>
                 <input className="text-black pl-1" type="password" id="confirmPassword" value={textConfirmPassword} onChange={handleChangeConfirmPassword}/>
               </div>
-              <div className={`text-xs text-orange-900 font-medium text-center`} >{passwordSuggestions}</div>
+              <div className={`text-xs ${passwordSuggestions === "Password Match"? "text-lime-400" :"text-orange-600"} font-medium text-center`} >{passwordSuggestions}</div>
             </div>
             <button onClick={() => handleClick()} disabled={disableButton} className="flex justify-center text-xs">
               <div className="login-button text-black flex justify-center w-52 text-lg">
